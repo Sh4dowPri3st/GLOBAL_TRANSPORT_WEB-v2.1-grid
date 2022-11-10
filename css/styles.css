@@ -32,8 +32,8 @@ body {
         "positionSticky caja1 aside"
         "positionSticky caja2 aside"
         "footer footer footer";
-        grid-template-columns: 0.3fr 3fr 0.6fr;
-        grid-template-rows: .7fr 5fr 3fr 2fr;
+    grid-template-columns: 0.3fr 3fr 0.6fr;
+    grid-template-rows: .7fr 5fr 3fr 1fr;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem; 
 }
@@ -44,8 +44,7 @@ header {
     display: flex;
     grid-area: header;
     justify-content: center;
-    padding-top: 2rem;
-    
+    align-items: center;
 }
 
 header img{
@@ -57,7 +56,7 @@ header h1 {
 }
 
 nav {
-    background-color: #37AA9C;
+    background-color: #ffffff;
     height: 1fr;
     position: sticky;
     top: 0%;    
@@ -66,13 +65,12 @@ nav {
 aside {
     background-color: #94F3E4;
     grid-area: aside;
+    ;
 }
 
-footer {
-    background-color: #1A1A1B;
-    height: 34rem;
-    color: #94F3E4;
-    grid-area: footer;
+aside p {
+    margin: 3rem;
+    font-size: 3rem;
 }
 
 a {
@@ -83,11 +81,73 @@ li {
     list-style: none;
 }
 
-#positionSticky{
-    grid-area: positionSticky;
-    background-color: #37AA9C;
+
+h2 {
+    color: #37AA9C;
 }
 
+footer {
+    background-color: #1A1A1B;
+    height: 34rem;
+    color: #94F3E4;
+    grid-area: footer;
+}
+
+/* ID */
+#positionSticky{
+    grid-area: positionSticky;
+    background-color: #ffffff;
+}
+
+#caja1 {
+    background-color: #ffffff;
+    grid-area: caja1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caja1 img {
+    width: 75rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#caja1 h2 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#caja1 p {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+#caja2 {
+    grid-area: caja2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#caja2 img {
+    width: 70rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+
+#caja2 h2 {
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+#caja2 p {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+/* CLASES */
 .logoheader {
     max-height: 12rem;
 }
@@ -96,13 +156,22 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    height: 88vh;
+    justify-content:space-around;
+} 
 
 .menu li {
     color: #ffffff;
     font-weight: 900;
-    margin: 3rem .5rem 3rem .5rem;
-    
+    margin: 5rem .5rem 5em .5rem;
+}
+
+.menu a {
+    color: #333F44;
+    background-color: #37AA9C;
+    border-radius: 1rem;
+    padding: 1rem;
+    border:solid .3rem #1A1A1B
 }
 
 .redes img {
@@ -119,52 +188,11 @@ li {
     margin: 4rem;
 }
 
-.flex {
+.redesflex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-h2 {
-color: #37AA9C;
-}
-
-#caja1 {
-    background-color: #ffffff;
-    grid-area: caja1;
-}
-
-#caja1 img {
-    width: 75rem;
-}
-
-#caja1 h2 {
-    font-size: 3rem;
-    margin: 2rem;
-}
-
-#caja1 p {
-    font-size: 2rem;
-    margin: 2rem;
-}
-
-#caja2 img {
-    width: 70rem;
-}
-
-.caja2 {
-    grid-area: caja2;
-}
-
-#caja2 h2 {
-    font-size: 3rem;
-    margin: 2rem;
-}
-
-#caja2 p {
-    font-size: 2rem;
-    margin: 2rem;
 }
 
 .cajafooter{
@@ -214,4 +242,54 @@ color: #37AA9C;
     font-weight: 900;
     padding: 1rem;
     text-align: center;
+}
+
+/* menuanimado:hover {
+    transform: translate(10px, 20px);  
+} */
+
+.menuanimado {
+    transition: all .3s;}
+.menuanimado:hover {
+    transform: translate(.5rem, -.2rem);
+    background-color: #333F44;
+    color: #37AA9C;
+}
+
+.menuanimado:focus {
+    transform: translate(.5rem, -.2rem);
+    background-color: #ffffff;
+    color: #37AA9C;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #333F44;
+        color:#1A1A1B;
+        display: grid;
+        grid-template-areas: 
+            "header header header"
+            "positionSticky caja1 caja1"
+            "positionSticky caja2 caja2"
+            "aside aside aside"
+            "footer footer footer";
+        grid-template-columns: 0.3fr 3fr 0.6fr;
+        grid-template-rows: .3fr 1fr .7fr 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem; 
+    }
+
+    header h1 {
+    font-size: 8rem;
+    margin: 3rem;}
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        grid-template-rows: .2fr 1fr .7fr 1fr;
+    }
+    
+    header h1 {
+    font-size: 5rem;}
 }
