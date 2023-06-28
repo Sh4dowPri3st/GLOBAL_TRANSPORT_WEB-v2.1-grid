@@ -205,6 +205,7 @@ footer {
 
 .textofooter {
     width: 33%;
+    font-size: 1.5rem;
 }
 
 .textofooter p {
@@ -241,6 +242,9 @@ footer {
     color: #1A1A1B;
     font-weight: 900;
     padding: 1rem;
+    text-align: center;
+}
+.center {
     text-align: center;
 }
 
