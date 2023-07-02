@@ -97,7 +97,7 @@ footer {
         "positionSticky caja2 caja2"
         "footer footer footer";
     grid-template-columns: 0.3fr 3fr 0.6fr;
-    grid-template-rows: 0.7fr 4fr 4fr 1fr;
+    grid-template-rows: 0.3fr 3fr 3.5fr 0.4fr;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem; 
 }
@@ -269,6 +269,18 @@ footer {
 
 .botonLateral{
     padding: 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    border: .2rem solid ;
+}
+
+.botonLateral:hover{
+    background-color: #333;
+    color: #37AA9C;
+}
+
+.botonLateral:active{
+    transform: translate(.5rem, .5rem);
 }
 
 .fotoCaja1{
@@ -318,6 +330,71 @@ footer {
 
 
 
+.iframeNegocio{
+    display: flex;
+    align-items: center;
+    margin: 5rem 10rem 20rem 10rem;
+    text-align: center;
+    border: solid 1rem #37AA9C;
+    padding: 5rem;
+}
+
+.textoIframe{
+    font-size: 4rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+
+
+
+/* .botonNegocios{
+    padding: 6rem 12rem 6rem 12rem;
+    text-align: center;
+    border: solid 1rem #12130b;
+    border-radius: 10rem;
+    font-size: 3rem;
+    color: #37AA9C;
+    background-color: #333;
+} */
+
+
+.botonNegocios {
+    padding: 2rem 4rem;
+    background-color: #5e6264;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+    margin-top: 10rem;
+}
+
+.botonNegocios:active {
+box-shadow: none;
+transform: translateY(2rem);
+}
+
+.botonNegocios:hover {
+    transform: translate(.5rem, -.2rem);
+    background-color: #37AA9C;
+    color: #333F44;
+}
+
+.cajaBotonNegocios{
+    display: flex;
+    justify-content: center;
+}
+
+
+.botonMail{
+    color: #12130b;
+}
+
+.botonMail:hover{
+    color: #37AA9C;
+}
 
 .redes img {
     width: 4rem;
