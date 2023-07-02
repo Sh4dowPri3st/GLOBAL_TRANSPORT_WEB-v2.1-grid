@@ -25,12 +25,47 @@
     </nav>
 
     <section>
+        <h1 class="tituloContacto">CONTACTA CON NOSOTROS</h1>
         <div>
-
+            <p class="textoContacto">En Global Transport, nos esforzamos por hacer que el proceso de solicitud de presupuesto sea rápido y sencillo para ti. Hemos creado un formulario especialmente diseñado para que puedas proporcionarnos los detalles necesarios y recibir un presupuesto en minutos. <br> <br> Simplemente completa los siguientes campos:           
+            </p>
         </div>
-
         <div>
+            <main>
+                <form class="cajaForm" onsubmit="mostrarAlerta()">
+                    <fieldset class="formulario">
+                        <legend class="legendForm" > FORMULARIO DE CONTACTO</legend>
+                        <div>
+                            <input class="inputForm"  type="text" id="Nombre completo" name="Nombre conpleto" placeholder="Ingresar nombre completo" required /><br>
+                        </div>
+                        <div>   
+                            <input class="inputForm" type="text" id="Telefono" name="Telefono" placeholder="Ingresar numero" required /><br>
+                        </div>
+                        <div>
+                            <input class="inputForm" type="Email" id="Email" name="Email" placeholder="Ingresar Email" required /><br>
+                        </div>
 
+
+                        <div>
+                            <textarea class="inputForm" cols="50" rows="10" id="dejanos tu mensjae" name="Dejanos tu mensaje" placeholder="Escribi aca tu mensaje..."></textarea>
+                        </div>
+                        <div class="botonesForm ">
+                            <input class="botonForm" type="submit" value="Enviar" />
+                            <input class="botonForm" type="reset" value="Limpiar Formulario">
+                        </div>
+                    </fieldset>
+                </form>
+            </main>
+        </div>
+        <div>
+            <p class="textoContacto">Una vez que nos hayas proporcionado esta información, nos pondremos en contacto contigo con un presupuesto detallado y competitivo. Nuestro objetivo es brindarte transparencia y claridad en cuanto a los costos, para que puedas tomar decisiones informadas.</p>
+        </div>
+        <div class="cajaFotoCamionetas">
+            <img src="../img/camionetas.jpeg" alt="camionetas" class="fotoCamionetas">
+        </div>
+        <div class="cajaWhatsApp">
+            <p class="textoContacto">Además, para mayor comodidad, hemos habilitado un botón de WhatsApp en nuestra página web. Puedes comunicarte directamente con nosotros para consultas adicionales o para enviar la información necesaria para tu presupuesto.</p>
+            <img class="imagenWhatsApp" src="../img/solicitarxwhats.png" alt="boton whatsapp" onclick="window.open('http://api.whatsapp.com/send?phone=5491140660117', '_blank')" target="_blank" >
         </div>
     </section>
 
@@ -59,6 +94,11 @@
             </div>
         </div>
         <p class="derechos">- TODOS LOS DERECHOS RESERVADOS - WEB MASTER STUDIO 2023 -</p>
-    </footer>   
+    </footer> 
+    <script>
+        function mostrarAlerta() {
+        alert("Agradecemos tu interés en Global Transport y la oportunidad de servirte. Estamos comprometidos a brindarte un servicio de excelencia, confiable y a precios asequibles. No dudes en contactarnos para todas tus necesidades de fletes y mini mudanzas en Monte Grande, Buenos Aires.¡Esperamos poder ayudarte con tu traslado pronto!");
+        }
+    </script>  
 </body>
 </html>
