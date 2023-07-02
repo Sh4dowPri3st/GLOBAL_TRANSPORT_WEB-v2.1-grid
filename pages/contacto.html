@@ -34,20 +34,40 @@
             <main>
                 <form class="cajaForm" onsubmit="mostrarAlerta()">
                     <fieldset class="formulario">
-                        <legend class="legendForm" > FORMULARIO DE CONTACTO</legend>
+                        <legend class="legendForm" > FORMULARIO DE PRESUPUESTO</legend>
                         <div>
-                            <input class="inputForm"  type="text" id="Nombre completo" name="Nombre conpleto" placeholder="Ingresar nombre completo" required /><br>
+                            <input class="inputForm"  type="text" id="Nombre completo" name="Nombre completo" placeholder="Ingresar Nombre" required /><br>
                         </div>
                         <div>   
-                            <input class="inputForm" type="text" id="Telefono" name="Telefono" placeholder="Ingresar numero" required /><br>
+                            <input class="inputForm" type="number" id="Telefono" name="Telefono" placeholder="Ingresar Telefono" required /><br>
                         </div>
                         <div>
                             <input class="inputForm" type="Email" id="Email" name="Email" placeholder="Ingresar Email" required /><br>
                         </div>
-
-
                         <div>
-                            <textarea class="inputForm" cols="50" rows="10" id="dejanos tu mensjae" name="Dejanos tu mensaje" placeholder="Escribi aca tu mensaje..."></textarea>
+                            <input class="inputForm" type="text" id="origen" name="origen" placeholder="Ingresar Direccion de Origen" required /><br>
+                        </div>
+                        <div>
+                            <input class="inputForm" type="text" id="destino" name="destino" placeholder="Ingresar Direccion de Destino" required /><br>
+                        </div>
+                        <div>
+                            <textarea class="inputForm" cols="50" rows="10" id="dejanos tu mensjae" name="Dejanos tu mensaje" placeholder="Detalle de la carga..."></textarea>
+                        </div>
+                        <div>
+                            <p class="pAyudante">¿Tienes personas disponibles para cargar y descargar en ambos puntos?</p>
+                            <div class="radioForm" >
+                                <div>
+                                    <label for="si">SI</label>
+                                    <input class="radioInput" type="radio" name="Sos mayorista" id="si">
+                                </div>
+                                <div>
+                                    <label for="no">NO</label>
+                                    <input class="radioInput" type="radio" name="Sos mayorista" id="no">
+                                </div>
+                            </div>
+                            <p class="pAyudante">¿Ya tienes una fecha y horario específico para el viaje?</p>
+                            <input class="fechaForm" type="date" id="fecha" name="fecha">
+                            <input type="time" id="hora" name="hora">
                         </div>
                         <div class="botonesForm ">
                             <input class="botonForm" type="submit" value="Enviar" />
