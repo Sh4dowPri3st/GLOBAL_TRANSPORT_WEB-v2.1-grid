@@ -161,7 +161,6 @@ grid-row-gap: 1rem;
 
 #logo {
     grid-area: logo;
-    max-width: 30vw;
     display: flex;
     justify-self: center;
     margin: 5rem;
@@ -169,12 +168,16 @@ grid-row-gap: 1rem;
 
 #logo img {
     border-radius: 50%;
+    max-width: 40vw;
+    max-height: 40vh;
 }
 
 
 #texto1 {
     grid-area: texto1;
     text-align: center;
+    margin-bottom: 15rem;
+
 }
 
 #foto1 {
@@ -203,6 +206,7 @@ grid-row-gap: 1rem;
     text-align: center;
     justify-self: center;
     align-self: center;
+    margin-top: 10rem;
 
 }
 
@@ -693,8 +697,27 @@ transform: translateY(2rem);
 /* NOSOTROS */
 
 .textoNosotros{
-    font-size: 3rem ;
+    font-size: 4rem ;
     color: #ccc;
+    margin: 5rem ;
+}
 
+.sectionNosotros{
     margin: 5rem;
+}
+
+.fotoFinal{
+    max-width: 80vw;
+    
+}
+
+.cajaFotoFinal{
+    text-align: center;
+    margin: 5rem;
+}
+
+.botonPresupuesto{
+    border-radius: 50%;
+    max-width: 20vw;
+    margin:20rem 10rem 10rem 10rem;
 }
