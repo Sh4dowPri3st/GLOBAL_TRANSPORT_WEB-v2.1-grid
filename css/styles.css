@@ -144,6 +144,67 @@ footer {
     margin: 2rem;
 } */
 
+#nosotros{
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "texto1 texto1"
+    "foto1 texto2"
+    "texto3 foto2"
+    "texto4 texto4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .4fr 1fr 1fr .5fr;
+grid-column-gap: 1rem;
+grid-row-gap: 1rem; 
+
+}
+
+#logo {
+    grid-area: logo;
+    max-width: 30vw;
+    display: flex;
+    justify-self: center;
+    margin: 5rem;
+}
+
+#logo img {
+    border-radius: 50%;
+}
+
+
+#texto1 {
+    grid-area: texto1;
+    text-align: center;
+}
+
+#foto1 {
+    grid-area: foto1;
+}
+
+#texto2 {
+    grid-area: texto2;
+    text-align: center;
+    align-self: center;
+}
+
+#texto3 {
+    grid-area: texto3;
+    text-align: center;
+    align-self: center;
+
+}
+
+#foto2 {
+    grid-area: foto2;
+}
+
+#texto4 {
+    grid-area: texto4;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+
+}
 
 /* CLASES */
 .logoheader {
@@ -609,6 +670,17 @@ transform: translateY(2rem);
 
 }
 
+.radioInput2{
+    margin-left: 3rem;
+    font-size: 2rem;
+}
+
+.tituloFormulario{
+    color: #12130b;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
 .pAyudante{
     font-size: 2rem;
     margin: 2rem;
@@ -616,4 +688,13 @@ transform: translateY(2rem);
 
 .fechaForm{
     margin: 0rem 2rem 4rem 2rem;
+}
+
+/* NOSOTROS */
+
+.textoNosotros{
+    font-size: 3rem ;
+    color: #ccc;
+
+    margin: 5rem;
 }
